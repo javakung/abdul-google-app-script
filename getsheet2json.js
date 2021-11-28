@@ -1,4 +1,4 @@
-function getContent(){
+function doGet(request){
   var sheet = SpreadsheetApp.openById('[SHEETID]')
   var values = sheet.getDataRange().getDisplayValues();
   var header = values[0];
